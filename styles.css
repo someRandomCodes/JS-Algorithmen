@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  padding: 0.5rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+section {
+  width: 90%;
+  max-width: 250px;
+  margin: auto;
+}
+
+.container {
+  text-align: center;
+  padding: 15px;
+  margin: 10px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 20px;
+}
+
+span {
+  margin: 0 3px;
+  color: red;
+}
+
+button {
+  font: inherit;
+  border: 1px solid blue;
+  background-color: blue;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}

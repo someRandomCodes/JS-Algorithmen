@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algorithms</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Algorithmen Rechner</h1>
+    </header>
+    <div id="algo_rechner">
+      <section class="container">
+        <h2>Enter List</h2>
+        <p>
+          Add values with whitespaces like <br>[15 10 5 1]<br>
+          Attantion only one whitespace!
+        </p>
+        <input type="text" v-model="algoList"/>
+        <button @click="AlgoListToArray">Sort</button>
+      </section>
+      <section id="log" class="container">
+        <h2>Laufzeit-Log</h2>
+        <ul>
+          <li>
+            Bubblesort:<br><hr>
+            <span v-for="number in bubbleSortArray">{{ number }}</span>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
